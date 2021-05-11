@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: deploy
+name: Build and deploy JAR app to Azure Web App - wkspower-erp
 
 on:
   push:
@@ -49,5 +49,5 @@ jobs:
       with:
         app-name: 'wkspower-erp'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_70a9e77b1fdd43fbaaddf848c58e70b3 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_414e20ebdb1d4692ae956f6be774d600 }}
         package: '*.jar'
